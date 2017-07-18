@@ -9,6 +9,9 @@ respeito a modificações no projeto.
 
 	O funcionamento de um sistema de controle de versão consiste na existência de um 
 repositório e de estações de trabalho. O repositório é uma área na qual os dados do projeto ficam por padrão.
-As estações de trabalho são onde os programadores trabalham. O desenvolvimento do projeto consiste em modificações
-feitas nas estações de trabalho sendo colocadas no repositório e, após isso, 
- 
+
+
+
+
+Os comandos do Git são
+

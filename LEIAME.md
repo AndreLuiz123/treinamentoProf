@@ -1,17 +1,16 @@
 Tutorial Git
 
-	Git é um sistema de controle de versão, ou seja, um sistema que gerencia todas as 
-alterações feitas em um arquivo ou em um conjunto de arquivos com o passar
-do tempo de forma que, quando houver a necessidade, seja possivel o acesso de versões
-anteriores à atual desse arquivo ou conjunto de arquivo. Com essa ferramenta, o trabalho 
-em equipe se torna mais fácil, dado que não há conflitos entre os membros da equipe no que diz
-respeito a modificações no projeto.
+	Git Ã© um sistema de controle de versï¿½o, ou seja, um sistema que gerencia todas as 
+alteraï¿½ï¿½es feitas em um arquivo ou em um conjunto de arquivos com o passar
+do tempo de forma que, quando houver a necessidade, seja possivel o acesso de versï¿½es
+anteriores ï¿½ atual desse arquivo ou conjunto de arquivo. Com essa ferramenta, o trabalho
+em equipe se torna mais fï¿½cil, dado que nï¿½o hï¿½ conflitos entre os membros da equipe no que diz
+respeito a modificaï¿½ï¿½es no projeto.
 
-	O funcionamento de um sistema de controle de versão consiste na existência de um 
-repositório e de estações de trabalho. O repositório é uma área na qual os dados do projeto ficam por padrão.
-
-
+	O funcionamento de um sistema de controle de versï¿½o consiste na existï¿½ncia de um
+repositï¿½rio e de estaï¿½ï¿½es de trabalho. O repositï¿½rio ï¿½ uma ï¿½rea na qual os dados do projeto ficam por padrï¿½o.
 
 
-Os comandos do Git são
 
+
+Os comandos do Git sï¿½o

@@ -59,18 +59,36 @@ Se a mudança for interessante, basta digitar "git add nome da pasta modificada"
 
 Já que os arquivos estão na Staging Area, so resta confirmar a entrada deles no Git Directory, ou seja, no repositório. Para isso, basta digitar "git commit -m "Escreve uma mensagem qualquer"".
 
-Quando se deseja saber mais detalhes das modificações nos arquivo do que o git status pode mostrar, pode-se usar o git diff ou o gitk, que irão mostrar exatamente o que foi modificado nos arquivos
+Quando se deseja saber mais detalhes das modificações nos arquivo do que o git status pode mostrar, existem comando que podem fazer isso:
+---------------------------------------------------------------------------------------------------------------------------------
+O "git diff" mostra, através do terminal, as mudanças que ocorreram no Working Directory. Se as mudanças forem para a Staging Area, então elas não serão mostradas pelo git diff.
+
+Caso seja interessante saber como estão das mudanças na Stagin Area, basta digitar "git diff -- staged", mas esse comando não mostra as modificações que estão no Git Directory.
+
+Caso seja interessante saber quais foram os commites enviados ao repositório até o momento, basta digitar "git log".
+
+Se, além dos commites, deseja-se saber quais foram as modificações exatas nos arquivos que estão no Git Directory, basta digitar "git log -p". Esse comando pode ser encarado como uma mistura do "git diff" com o "git log".
+
+Como o "git diff" e o "git log"(juntamente com suas variações) são mostrados pelo terminal, muitas vezes a análise das mudanças nos arquivos através desses comandos torna-se pouco produtiva. Para resolver esse problema, também existe o comando "gitk", que da acesso à interface gráfica do Git. Com essa interface, pode-se analisar todas as mudanças nos arquivos de forma clara e objetiva.
+--------------------------------------------------------------------------------------------------------------------------------
+
+
+
 
 Resumindo:
 
-git init: Inicia o controle de versão
+git init: Inicia o controle de versão.
 
-git add: Coloca modificação dos arquivos na Staging Area
+git add: Coloca modificação dos arquivos na Staging Area.
 
-git commit: Coloca arquivos na Staging Area no Working Directory
+git commit: Coloca arquivos na Staging Area no Working Directory.
 
 git status: Verifica se existem modificações no Working Directory ou arquivos no Staging Area para serem commitados.
 
-git diff: Mostra, através do terminal, as mudanças feitas nos arquivos do projeto
+git diff: Mostra, através do terminal, as mudanças feitas nos arquivos do projeto enquanto eles ainda estão no Working Directory.
 
-gitk: Mostra, através de uma interface, as mudanças feitas nos arquivos do projeto
+git log: Mostra, através do terminal, todos os commites feitos no projeto.
+
+git log -p: Mostra, através do terminal, todos os arquivos commitados e seus commites do projeto.
+
+gitk: Mostra, através de uma interface gráfica, as mudanças feitas nos arquivos do projeto.

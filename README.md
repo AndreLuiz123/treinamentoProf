@@ -43,7 +43,7 @@ cd nome da pasta
 
 O git se encaminhará para a referida pasta.
 
-Após isso, através do comando "git init" é criado um repositório na pasta que esta sendo trabalhada para o git. Essa criação de repositório pode ser confirmada com a pasta .git que aparecerá na localização onde foi digitado "git init".
+Após isso, através do comando "git init" é criado um repositório na pasta que esta sendo trabalhada para o git, dando inicio ao controle de versão. Essa criação de repositório pode ser confirmada com a pasta .git que aparecerá na localização onde foi digitado "git init".
 
 É interessante notar que, ao lado do "nome de usuário @ nome da sua máquina, seguido da localização" haverá um "(master)"
 
@@ -51,4 +51,26 @@ exemplo:
 
   fulano@beltrano1cak331 documentos/estudos/git (master)
 
-Isso indica que o
+Isso indica que o estagio no qual se esta é o mais recente do projeto, e não em versões anteriores ou desatualizadas em relação a modificações feitas no projeto.
+
+Após o Git init, para verificar se há alguma mudança no projeto que não foi incluida no repositório da sua máquina, digite "git status".
+
+Se a mudança for interessante, basta digitar "git add nome da pasta modificada", o que fará a mudança feita no arquivo ir para o controle de versão. O git add, em resumo, pega o arquivo que estava no Working Directory e coloca-o na Staging Area.
+
+Já que os arquivos estão na Staging Area, so resta confirmar a entrada deles no Git Directory, ou seja, no repositório. Para isso, basta digitar "git commit -m "Escreve uma mensagem qualquer"".
+
+Quando se deseja saber mais detalhes das modificações nos arquivo do que o git status pode mostrar, pode-se usar o git diff ou o gitk, que irão mostrar exatamente o que foi modificado nos arquivos
+
+Resumindo:
+
+git init: Inicia o controle de versão
+
+git add: Coloca modificação dos arquivos na Staging Area
+
+git commit: Coloca arquivos na Staging Area no Working Directory
+
+git status: Verifica se existem modificações no Working Directory ou arquivos no Staging Area para serem commitados.
+
+git diff: Mostra, através do terminal, as mudanças feitas nos arquivos do projeto
+
+gitk: Mostra, através de uma interface, as mudanças feitas nos arquivos do projeto
